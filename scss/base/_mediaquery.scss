@@ -1,5 +1,7 @@
 /*!--MEDIA QUERYS--*/
 
+@import"../base/variables";
+
 /*-!---Index*/
 @media screen and (max-width: 1260px){
     
@@ -14,7 +16,7 @@
     header .head-h1{
         font-size: 60px;
     }
-    header h1{
+    header a h1{
         font-size: 60px;
     }
 }
@@ -40,7 +42,7 @@
         font-size: 55px;
     }
 
-    header h1{
+    header a h1{
         font-size: 55px;
     }
 
@@ -338,7 +340,7 @@
         font-size: 45px;
     }
 
-    header h1{
+    header a h1{
         font-size: 45px;
     }
 
@@ -410,6 +412,23 @@
         height: 120px;
     }
 
+    /*HTML COPAS*/
+    .h2-copas{
+        font-size: 35px;
+        font-weight: 550;
+        font-style: italic;
+        text-align: center;
+        align-items: center;
+    }
+
+    .img-copas{
+        border: 1px solid rgb(190, 187, 187);
+        width: 310px;
+        height: 220px;
+    }
+
+
+
     /*!HTML-HISTORIA*/
 
     .titulo-hist h2 {
@@ -428,6 +447,15 @@
 
     .grid-historia-item2 img{
         width: 450px;
+        height: 230px;
+    }
+
+    /*HTML-CT*/
+    .section-ct .media-tigre h2{
+        font-size: 30px;
+    }
+    .section-ct .media-tigre iframe{
+        width: 460px;
         height: 230px;
     }
 
@@ -467,7 +495,7 @@
         font-size: 45px ;
     }
 
-    header h1{
+    header a h1{
         font-size: 45px;
     }
 
@@ -536,6 +564,15 @@
         height: 190px;
     }
 
+    /*HTML-CT*/
+    .section-ct .media-tigre h2{
+        font-size: 25px;
+    }
+    .section-ct .media-tigre iframe{
+        width: 360px;
+        height: 220px;
+    }
+
     /*!Footer*/
 
     footer p{
@@ -571,7 +608,7 @@
         font-size: 35px;
     }
     
-    header h1{
+    header a h1{
         font-size: 35px;
     
     }
@@ -605,7 +642,7 @@ header .head-h1{
     font-size: 35px;
 }
 
-header h1{
+header a h1{
     font-size: 35px;
 
 }
@@ -675,10 +712,35 @@ header h1{
     font-size: 40px;
 }
 
+/*HTML COPAS*/
+.h2-copas{
+    font-size: 25px;
+    font-weight: 550;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+}
+
+.img-copas{
+    border: 1px solid rgb(190, 187, 187);
+    width: 280px;
+    height: 220px;
+}
+
+
     /*!HTML-HISTORIA*/
     .grid-historia-item2 img{
         width: 330px;
         height: 140px;
     }
 
+
+    /*HTML-CT*/
+    .section-ct .media-tigre h2{
+        font-size: 20px;
+    }
+    .section-ct .media-tigre iframe{
+        width: 310px;
+        height: 180px;
+    }
 }

@@ -1,0 +1,54 @@
+//!VARIABLES// 
+$color-header:#1e448d ;
+$color-section:rgb(182, 44, 44);
+
+//!LISTAS//
+$font-size: 
+15px,
+20px,
+30px,
+40px,
+45px,
+70px,
+75px,
+90px;
+
+
+//!EXTENDS// 
+/*HEADER*/ 
+%flex-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex-col-jus-cen{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+%flex-row-even{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+%flex-row-cen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*MAIN GALERIA*/
+%galeria-grid{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+//!MIXIN// 
+@mixin mix-galeria-noticias ($flex, $justify, $direction){
+    display: $flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
