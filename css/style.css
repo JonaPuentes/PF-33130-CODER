@@ -683,7 +683,6 @@ footer a img{
         grid-template-rows: repeat(3,1fr);
         gap: 10px;
         justify-content: center;
-
         grid-template-areas: 
         "header header"
         "main main"

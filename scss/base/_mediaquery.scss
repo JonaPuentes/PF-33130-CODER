@@ -154,19 +154,21 @@
     }
 
     /*!HTML-HISTORIA*/
-    .grid-conteiner-hist{
-        display: grid;
-        margin: 0;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,1fr);
-        gap: 10px;
-        justify-content: center;
-
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer"
-        ;
+    .menu-historia{
+        .grid-conteiner-hist{
+            display: grid;
+            margin: 0;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 10px;
+            justify-content: center;
+    
+            grid-template-areas: 
+            "header header"
+            "main main"
+            "footer footer"
+            ;
+        }
     }
 
     //HTML-SOCIOS//
@@ -547,29 +549,30 @@
 
 
     /*!HTML-HISTORIA*/
-
-    .titulo-hist{
-        h2 {
-            color: white;
-            font-size: 35px;
-            font-weight: 100;
-            font-family: Arial, Helvetica, sans-serif;
-            width: 100%;
+    .menu-historia{
+        .titulo-hist{
+            h2 {
+                color: white;
+                font-size: 35px;
+                font-weight: 100;
+                font-family: Arial, Helvetica, sans-serif;
+                width: 100%;
+            }
         }
-    }
-
-    .grid-historia-item1{
-        img{
-            width: 274px;
-            height: 409px;
-            
+    
+        .grid-historia-item1{
+            img{
+                width: 274px;
+                height: 409px;
+                
+            }
         }
-    }
-
-    .grid-historia-item2{
-        img{
-            width: 450px;
-            height: 230px;
+    
+        .grid-historia-item2{
+            img{
+                width: 450px;
+                height: 230px;
+            }
         }
     }
 
@@ -713,17 +716,19 @@
 
 
     /*!HTML-HISTORIA*/
-    .grid-historia-item1{
-        img{
-            width: 274px;
-            height: 409px;
+    .menu-historia{
+        .grid-historia-item1{
+            img{
+                width: 274px;
+                height: 409px;
+            }
         }
-    }
-
-    .grid-historia-item2{
-        img{
-            width: 360px;
-            height: 190px;
+    
+        .grid-historia-item2{
+            img{
+                width: 360px;
+                height: 190px;
+            }
         }
     }
 
@@ -793,10 +798,12 @@
 
     /*!HTML-HISTORIA*/
 
-    .grid-historia-item2{
-        img{
-            width: 340px;
-            height: 160px;
+    .menu-historia{
+        .grid-historia-item2{
+            img{
+                width: 340px;
+                height: 160px;
+            }
         }
     }
 }
@@ -915,10 +922,12 @@ header {
 
 
     /*!HTML-HISTORIA*/
-    .grid-historia-item2{
-        img{
-            width: 330px;
-            height: 140px;
+    .menu-historia{
+        .grid-historia-item2{
+            img{
+                width: 330px;
+                height: 140px;
+            }
         }
     }
 
