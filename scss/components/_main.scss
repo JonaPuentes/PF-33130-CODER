@@ -289,16 +289,19 @@
 
 /**HTML SOCIOS*/ 
 
-.socios-container{
+.socios-conteiner{
     width: 100%;
     height: 100vh;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .row-up{
         width: 100%;
         height: 50%;
-        @extend %flex-row-even;
+        @extend %flex-row-cen;
+        align-items: center;
         .socios-portal-row{
             width: 440px;
             height: 320px;
@@ -332,7 +335,8 @@
     .row-down{
         width: 100%;
         height: 50%;
-        @extend %flex-row-even;
+        @extend %flex-row-cen;
+        align-items: center;
         .socios-portal{
             width: 440px;
             height: 320px;

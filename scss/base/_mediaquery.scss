@@ -28,46 +28,11 @@
             }
         }
     }
-        
-    }
     
     //HTML-SOCIOS//
-    .socios-conteiner{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        .row-up{
-            width: 100%;
-            height: 50%;
-            .socios-portal-row{
-                width: 350px;
-                height: 260px;
-                margin: none;
-                    img{
-                        width: 320px;
-                        height: 240px;
-                    }
-                    h2{
-                        width: 320px;
-                        height: 40px;
-                        font-size: 30px;
-                    }
-            }
-        }
-        .row-down{
-            .socios-portal{
-                img{
-                    width: 320px;
-                    height: 240px;
-                }
-                h2{
-                    width: 320px;
-                    height: 40px;
-                    font-size: 30px;
-                }
-            }
-        }
+    @extend %socios-911;
     }
+    
 
 @media screen and (max-width: 911px){
     
@@ -172,10 +137,43 @@
     }
 
     //HTML-SOCIOS//
-    
-
-    
-}
+            .socios-conteiner{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .row-up{
+                    width: 100%;
+                    height: 50%;
+                    .socios-portal-row{
+                        width: 340px;
+                        height: 240px;
+                        margin: 0;
+                        img {
+                            width: 300px;
+                            height: 220px; }
+                            h2{
+                                width: 320px;
+                                height: 40px;
+                                font-size: 25px;
+                            }
+                
+                    }
+                }
+                .row-down{
+                    .socios-portal{
+                        img{
+                            width: 300px;
+                            height: 220px;
+                        }
+                        h2{
+                            width: 320px;
+                            height: 40px;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
 @media screen and (max-width: 876px){
 
     /*!galeria*/
@@ -318,14 +316,14 @@
             
                 grid-row-start: 3;
                 grid-row-end: 4;
+                img{
+                    width: 530px;
+                    height: 310px;
+                }
                 h2{
                     font-size: 35px;
                     color: white;
                     font-style: italic;
-                }
-                img{
-                    width: 530px;
-                    height: 310px;
                 }
             }
             .grid-historia-item3{
@@ -559,7 +557,7 @@
                 width: 100%;
             }
         }
-    
+    .grid-conteiner-hist{
         .grid-historia-item1{
             img{
                 width: 274px;
@@ -574,6 +572,7 @@
                 height: 230px;
             }
         }
+    }
     }
 
     /*HTML-CT*/
@@ -717,17 +716,19 @@
 
     /*!HTML-HISTORIA*/
     .menu-historia{
-        .grid-historia-item1{
-            img{
-                width: 274px;
-                height: 409px;
+        .grid-conteiner-hist{
+            .grid-historia-item1{
+                img{
+                    width: 260px;
+                    height: 380px;
+                }
             }
-        }
-    
-        .grid-historia-item2{
-            img{
-                width: 360px;
-                height: 190px;
+        
+            .grid-historia-item2{
+                img{
+                    width: 360px;
+                    height: 190px;
+                }
             }
         }
     }
@@ -799,10 +800,12 @@
     /*!HTML-HISTORIA*/
 
     .menu-historia{
-        .grid-historia-item2{
-            img{
-                width: 340px;
-                height: 160px;
+        .grid-conteiner-hist{
+            .grid-historia-item2{
+                img{
+                    width: 340px;
+                    height: 160px;
+                }
             }
         }
     }
@@ -923,10 +926,24 @@ header {
 
     /*!HTML-HISTORIA*/
     .menu-historia{
-        .grid-historia-item2{
-            img{
-                width: 330px;
-                height: 140px;
+        .grid-conteiner-hist{
+            .grid-historia-item1{
+                margin: 0;
+                h2{
+                    font-size: nth($font-size,1 );
+                }
+                p{
+                    font-size: nth($font-size,1);
+                }
+            }
+            .grid-historia-item2{
+                h2{
+                    font-size: nth($font-size,2);
+                }
+                img{
+                    width: 280px;
+                    height: 140px;
+                }
             }
         }
     }
