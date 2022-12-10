@@ -512,27 +512,13 @@ header {
       width: 100%;
       height: auto;
       flex-direction: column; }
-      main .socios-conteiner .row-up .left {
-        width: 100%;
-        height: 100%;
-        flex-direction: column; }
-        main .socios-conteiner .row-up .left .socios-portal-row {
-          width: 280px;
-          height: 220px; }
-          main .socios-conteiner .row-up .left .socios-portal-row img {
-            width: 280px;
-            height: 220px; }
-          main .socios-conteiner .row-up .left .socios-portal-row h2 {
-            width: 280px;
-            height: 40px;
-            font-size: 25px; }
-      main .socios-conteiner .row-up .right .socios-portal-row {
+      main .socios-conteiner .row-up .socios-portal-row {
         width: 280px;
         height: 220px; }
-        main .socios-conteiner .row-up .right .socios-portal-row img {
+        main .socios-conteiner .row-up .socios-portal-row img {
           width: 280px;
           height: 220px; }
-        main .socios-conteiner .row-up .right .socios-portal-row h2 {
+        main .socios-conteiner .row-up .socios-portal-row h2 {
           width: 280px;
           height: 40px;
           font-size: 25px; } }
@@ -606,32 +592,21 @@ header {
     margin: 15px; }
     main .socios-conteiner .row-up {
       width: 100%;
-      height: auto; }
-      main .socios-conteiner .row-up .left {
-        width: 100%;
-        height: 100%; }
-        main .socios-conteiner .row-up .left .socios-portal-row {
-          width: 280px;
-          height: 220px; }
-          main .socios-conteiner .row-up .left .socios-portal-row img {
-            width: 280px;
-            height: 220px; }
-          main .socios-conteiner .row-up .left .socios-portal-row h2 {
-            width: 280px;
-            height: 40px;
-            font-size: 25px; }
-      main .socios-conteiner .row-up .right .socios-portal-row {
+      height: auto;
+      width: 100%;
+      height: 100%; }
+      main .socios-conteiner .row-up .socios-portal-row {
         width: 280px;
         height: 220px; }
-        main .socios-conteiner .row-up .right .socios-portal-row img {
+        main .socios-conteiner .row-up .socios-portal-row img {
           width: 280px;
           height: 220px; }
-        main .socios-conteiner .row-up .right .socios-portal-row h2 {
+        main .socios-conteiner .row-up .socios-portal-row h2 {
           width: 280px;
           height: 40px;
           font-size: 25px; } }
 
-@media screen and (max-width: 876px) {
+@media screen and (max-width: 911px) and (max-width: 876px) {
   /*!galeria*/
   .galeria .galeria-item h2 {
     font-size: 55px;
@@ -755,32 +730,18 @@ header {
       width: 100%;
       height: auto;
       flex-direction: column; }
-      main .socios-conteiner .row-up .left {
-        width: 100%;
-        height: 100%;
-        flex-direction: column; }
-        main .socios-conteiner .row-up .left .socios-portal-row {
-          width: 280px;
-          height: 220px; }
-          main .socios-conteiner .row-up .left .socios-portal-row img {
-            width: 280px;
-            height: 220px; }
-          main .socios-conteiner .row-up .left .socios-portal-row h2 {
-            width: 280px;
-            height: 40px;
-            font-size: 25px; }
-      main .socios-conteiner .row-up .right .socios-portal-row {
+      main .socios-conteiner .row-up .socios-portal-row {
         width: 280px;
         height: 220px; }
-        main .socios-conteiner .row-up .right .socios-portal-row img {
+        main .socios-conteiner .row-up .socios-portal-row img {
           width: 280px;
           height: 220px; }
-        main .socios-conteiner .row-up .right .socios-portal-row h2 {
+        main .socios-conteiner .row-up .socios-portal-row h2 {
           width: 280px;
           height: 40px;
           font-size: 25px; } }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 911px) and (max-width: 700px) {
   /*!galeria noticias*/
   .galeria-noticias .cards .card-historia img {
     width: 180px;
@@ -813,27 +774,13 @@ header {
       width: 100%;
       height: auto;
       flex-direction: column; }
-      main .socios-conteiner .row-up .left {
-        width: 100%;
-        height: 100%;
-        flex-direction: column; }
-        main .socios-conteiner .row-up .left .socios-portal-row {
-          width: 280px;
-          height: 220px; }
-          main .socios-conteiner .row-up .left .socios-portal-row img {
-            width: 280px;
-            height: 220px; }
-          main .socios-conteiner .row-up .left .socios-portal-row h2 {
-            width: 280px;
-            height: 40px;
-            font-size: 25px; }
-      main .socios-conteiner .row-up .right .socios-portal-row {
+      main .socios-conteiner .row-up .socios-portal-row {
         width: 280px;
         height: 220px; }
-        main .socios-conteiner .row-up .right .socios-portal-row img {
+        main .socios-conteiner .row-up .socios-portal-row img {
           width: 280px;
           height: 220px; }
-        main .socios-conteiner .row-up .right .socios-portal-row h2 {
+        main .socios-conteiner .row-up .socios-portal-row h2 {
           width: 280px;
           height: 40px;
           font-size: 25px; } }
@@ -926,28 +873,17 @@ header {
     main .socios-conteiner .row-up {
       width: 100%;
       height: auto;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
       flex-direction: column; }
-      main .socios-conteiner .row-up .left {
-        width: 100%;
-        height: 100%;
-        flex-direction: column; }
-        main .socios-conteiner .row-up .left .socios-portal-row {
-          width: 280px;
-          height: 220px; }
-          main .socios-conteiner .row-up .left .socios-portal-row img {
-            width: 280px;
-            height: 220px; }
-          main .socios-conteiner .row-up .left .socios-portal-row h2 {
-            width: 280px;
-            height: 40px;
-            font-size: 25px; }
-      main .socios-conteiner .row-up .right .socios-portal-row {
+      main .socios-conteiner .row-up .socios-portal-row {
         width: 280px;
         height: 220px; }
-        main .socios-conteiner .row-up .right .socios-portal-row img {
+        main .socios-conteiner .row-up .socios-portal-row img {
           width: 280px;
           height: 220px; }
-        main .socios-conteiner .row-up .right .socios-portal-row h2 {
+        main .socios-conteiner .row-up .socios-portal-row h2 {
           width: 280px;
           height: 40px;
           font-size: 25px; } }
