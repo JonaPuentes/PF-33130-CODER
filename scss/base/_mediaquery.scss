@@ -8,31 +8,100 @@
     /*!header*/
     header {
         width: 100%;
-        height: 200px;
+        height: 210px;
         nav{
             ul{
                     margin: 10px;
             }
         }
-    }
-    header{
         .head-h1{
             font-size: 60px;
         }
-    } 
-        
-    header{
         a{
             h1{
-                font-size: 70px;
+                font-size: 60px;
             }
         }
     }
     
     //HTML-SOCIOS//
-    @extend %socios-911;
+    body{
+        main{
+            .socios-conteiner{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px;
+                .row-up{
+                    width: 100%;
+                    height: auto;
+                    flex-direction: column;
+                        .socios-portal-row{
+                            width: 280px;
+                            height: 220px;
+                            img {
+                                width: 280px;
+                                height: 220px; }
+                                h2{
+                                    width: 280px;
+                                    height: 40px;
+                                    font-size: 25px;
+                                }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+
+
+    @media screen and (max-width:1000px){
+        main{
+            .socios-conteiner{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px;
+                .row-up{
+                    width: 100%;
+                    height: auto;
+                    flex-direction: column;
+                    .left{
+                        width: 100%;
+                        height: 100%;
+                        flex-direction: column;
+                        .socios-portal-row{
+                            width: 280px;
+                            height: 220px;
+                            img {
+                                width: 280px;
+                                height: 220px; }
+                                h2{
+                                    width: 280px;
+                                    height: 40px;
+                                    font-size: 25px;
+                                }
+                        }
+                    }
+                    .right{
+                        .socios-portal-row{
+                            width: 280px;
+                            height: 220px;
+                            img {
+                                width: 280px;
+                                height: 220px; }
+                                h2{
+                                    width: 280px;
+                                    height: 40px;
+                                    font-size: 25px;
+                                }
+                        }
+                    }
+                }
+            }
+        }
     }
-    
 
 @media screen and (max-width: 911px){
     
@@ -137,43 +206,50 @@
     }
 
     //HTML-SOCIOS//
+        main{
             .socios-conteiner{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: center;
+                margin: 15px;
                 .row-up{
                     width: 100%;
-                    height: 50%;
-                    .socios-portal-row{
-                        width: 340px;
-                        height: 240px;
-                        margin: 0;
-                        img {
-                            width: 300px;
-                            height: 220px; }
-                            h2{
-                                width: 320px;
-                                height: 40px;
-                                font-size: 25px;
-                            }
-                
-                    }
-                }
-                .row-down{
-                    .socios-portal{
-                        img{
-                            width: 300px;
+                    height: auto;
+                    .left{
+                        width: 100%;
+                        height: 100%;
+                        .socios-portal-row{
+                            width: 280px;
                             height: 220px;
+                            img {
+                                width: 280px;
+                                height: 220px; }
+                                h2{
+                                    width: 280px;
+                                    height: 40px;
+                                    font-size: 25px;
+                                }
                         }
-                        h2{
-                            width: 320px;
-                            height: 40px;
-                            font-size: 25px;
+                    }
+                    .right{
+                        .socios-portal-row{
+                            width: 280px;
+                            height: 220px;
+                            img {
+                                width: 280px;
+                                height: 220px; }
+                                h2{
+                                    width: 280px;
+                                    height: 40px;
+                                    font-size: 25px;
+                                }
                         }
                     }
                 }
             }
         }
+    }
+
 @media screen and (max-width: 876px){
 
     /*!galeria*/
@@ -341,38 +417,46 @@
         }
     }
     //HTML-SOCIOS//
-    .socios-conteiner{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        .row-up{
-            width: 100%;
-            height: 50%;
-            .socios-portal-row{
-                width: 340px;
-                height: 240px;
-                margin: 0;
-                img {
-                    width: 320px;
-                    height: 240px; }
-                    h2{
-                        width: 320px;
-                        height: 40px;
-                        font-size: 25px;
+    main{
+        .socios-conteiner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 15px;
+            .row-up{
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                .left{
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    .socios-portal-row{
+                        width: 280px;
+                        height: 220px;
+                        img {
+                            width: 280px;
+                            height: 220px; }
+                            h2{
+                                width: 280px;
+                                height: 40px;
+                                font-size: 25px;
+                            }
                     }
-        
-            }
-        }
-        .row-down{
-            .socios-portal{
-                img{
-                    width: 320px;
-                    height: 240px;
                 }
-                h2{
-                    width: 320px;
-                    height: 40px;
-                    font-size: 25px;
+                .right{
+                    .socios-portal-row{
+                        width: 280px;
+                        height: 220px;
+                        img {
+                            width: 280px;
+                            height: 220px; }
+                            h2{
+                                width: 280px;
+                                height: 40px;
+                                font-size: 25px;
+                            }
+                    }
                 }
             }
         }
@@ -424,6 +508,53 @@
             }
         }
     }
+
+    //HTML SOCIOS//
+    main{
+        .socios-conteiner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 15px;
+            .row-up{
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                .left{
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    .socios-portal-row{
+                        width: 280px;
+                        height: 220px;
+                        img {
+                            width: 280px;
+                            height: 220px; }
+                            h2{
+                                width: 280px;
+                                height: 40px;
+                                font-size: 25px;
+                            }
+                    }
+                }
+                .right{
+                    .socios-portal-row{
+                        width: 280px;
+                        height: 220px;
+                        img {
+                            width: 280px;
+                            height: 220px; }
+                            h2{
+                                width: 280px;
+                                height: 40px;
+                                font-size: 25px;
+                            }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 590px){
@@ -574,6 +705,52 @@
         }
     }
     }
+    //HTML SOCIOS//
+    main{
+        .socios-conteiner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 15px;
+            .row-up{
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                .left{
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    .socios-portal-row{
+                        width: 280px;
+                        height: 220px;
+                        img {
+                            width: 280px;
+                            height: 220px; }
+                            h2{
+                                width: 280px;
+                                height: 40px;
+                                font-size: 25px;
+                            }
+                    }
+                }
+                .right{
+                    .socios-portal-row{
+                        width: 280px;
+                        height: 220px;
+                        img {
+                            width: 280px;
+                            height: 220px; }
+                            h2{
+                                width: 280px;
+                                height: 40px;
+                                font-size: 25px;
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
 
     /*HTML-CT*/
     .section-ct{
@@ -608,7 +785,6 @@
             }
         }
     }
-}
 
 
 @media screen and (max-width: 465px){
