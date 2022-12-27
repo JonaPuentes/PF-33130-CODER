@@ -28,17 +28,20 @@
     body{
         main{
             .socios-conteiner{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin: 15px;
+                width: 100%;
+                height: 100%;
                 .row-up{
                     width: 100%;
-                    height: auto;
-                    flex-direction: column;
+                    height: 90vh;
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: repeat(2,auto);
+                    padding: 20px;
+                    justify-items: center;
                         .socios-portal-row{
                             width: 280px;
                             height: 220px;
+                            justify-items: center;
                             img {
                                 width: 280px;
                                 height: 220px; }
@@ -55,34 +58,6 @@
 }
 
 
-
-    @media screen and (max-width:1000px){
-        main{
-            .socios-conteiner{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin: 15px;
-                .row-up{
-                    width: 100%;
-                    height: auto;
-                    flex-direction: column;
-                        .socios-portal-row{
-                            width: 280px;
-                            height: 220px;
-                            img {
-                                width: 280px;
-                                height: 220px; }
-                                h2{
-                                    width: 280px;
-                                    height: 40px;
-                                    font-size: 25px;
-                                }
-                        }
-                }
-            }
-        }
-    }
 
 @media screen and (max-width: 911px){
     
@@ -187,32 +162,37 @@
     }
 
     //HTML-SOCIOS//
-        main{
-            .socios-conteiner{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                margin: 15px;
-                .row-up{
+        body{
+            main{
+                .socios-conteiner{
                     width: 100%;
-                    height: auto;
+                    height: 100%;
+                    .row-up{
                         width: 100%;
-                        height: 100%;
-                        .socios-portal-row{
-                            width: 280px;
-                            height: 220px;
-                            img {
+                        height: 100vh;
+                        display: grid;
+                        grid-template-columns: repeat(2,1fr);
+                        grid-template-rows: repeat(3,auto);
+                        gap: 15px;
+                        padding: 15px;
+                        justify-items: center;
+                            .socios-portal-row{
                                 width: 280px;
-                                height: 220px; }
-                                h2{
+                                height: 220px;
+                                img {
                                     width: 280px;
-                                    height: 40px;
-                                    font-size: 25px;
-                                }
-                        }
+                                    height: 220px; }
+                                    h2{
+                                        width: 280px;
+                                        height: 40px;
+                                        font-size: 25px;
+                                    }
+                            }
+                }
             }
         }
     }
+}
 
 @media screen and (max-width: 876px){
 
@@ -381,33 +361,36 @@
         }
     }
     //HTML-SOCIOS//
-    main{
-        .socios-conteiner{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 15px;
-            .row-up{
+    body{
+        main{
+            .socios-conteiner{
                 width: 100%;
-                height: auto;
-                flex-direction: column;
-                    .socios-portal-row{
-                        width: 280px;
-                        height: 220px;
-                        img {
+                height: 100%;
+                .row-up{
+                    width: 100%;
+                    height: 100vh;
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-rows: repeat(3,auto);
+                    gap: 15px;
+                    padding: 15px;
+                    justify-items: center;
+                        .socios-portal-row{
                             width: 280px;
-                            height: 220px; }
-                            h2{
+                            height: 220px;
+                            img {
                                 width: 280px;
-                                height: 40px;
-                                font-size: 25px;
-                            }
-                    }
+                                height: 220px; }
+                                h2{
+                                    width: 280px;
+                                    height: 40px;
+                                    font-size: 25px;
+                                }
+                        }
             }
         }
     }
-
-}
+    }
 
 @media screen and (max-width: 700px) {
 
@@ -530,8 +513,8 @@
             .card-historia{
                 height: auto;
                 img{
-                    width: 160px;
-                    height: 140px;
+                    width: 140px;
+                    height: 120px;
                     margin: 5px;
                 }
                 h3{
@@ -540,21 +523,12 @@
                     font-weight: 700;
                     text-align: center;
                 }
-            }
-        }
-        div{
-            p{
-                color: rgb(255, 255, 255);
-                font-size: 12px;
-                font-weight: 300;
-                text-align: center;
-                margin: 5px;
             }
             .card-copas{
                 height: auto;
                 img{
-                    width: 160px;
-                    height: 140px;
+                    width: 140px;
+                    height: 120px;
                     margin: 5px;
                 }
                 h3{
@@ -562,6 +536,15 @@
                     font-size: 15px;
                     font-weight: 700;
                     text-align: center;
+                }
+            }
+            div{
+                p{
+                    color: rgb(255, 255, 255);
+                    font-size: 12px;
+                    font-weight: 300;
+                    text-align: center;
+                    margin: 5px;
                 }
             }
         }
@@ -633,31 +616,33 @@
     }
     }
     //HTML SOCIOS//
-    main{
-        .socios-conteiner{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 15px;
-            .row-up{
+    body{
+        main{
+            .socios-conteiner{
                 width: 100%;
-                height: auto;
-                flex-direction: column;
+                height: 100%;
+                .row-up{
                     width: 100%;
-                    height: 100%;
-                    flex-direction: column;
-                    .socios-portal-row{
-                        width: 280px;
-                        height: 220px;
-                        img {
-                            width: 280px;
-                            height: 220px; }
-                            h2{
-                                width: 280px;
-                                height: 40px;
-                                font-size: 25px;
-                            }
-                    }
+                    height: 90vh;
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-rows: repeat(3,auto);
+                    gap: 15px;
+                    padding: 15px;
+                    justify-items: center;
+                        .socios-portal-row{
+                            width: 200px;
+                            height: 160px;
+                            img {
+                                width: 200px;
+                                height: 160px; }
+                                h2{
+                                    width: 200px;
+                                    height: 30px;
+                                    font-size: 20px;
+                                }
+                        }
+                }
             }
         }
     }
@@ -820,6 +805,38 @@
         }
     }
 
+    /*HTML-PLANTEL*/
+    body{
+        main{
+            .socios-conteiner{
+                width: 100%;
+                height: 100%;
+                .row-up{
+                    width: 100%;
+                    height: 80vh;
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-rows: repeat(3,auto);
+                    gap: 10px;
+                    padding: 10px;
+                    justify-items: center;
+                        .socios-portal-row{
+                            width: 180px;
+                            height: 160px;
+                            img {
+                                width: 180px;
+                                height: 140px; }
+                                h2{
+                                    width: 180px;
+                                    height: 30px;
+                                    font-size: 15px;
+                                }
+                        }
+                }
+            }
+        }
+    }
+
     /*HTML-CT*/
     .section-ct{
         .media-tigre{
@@ -892,6 +909,37 @@
                 img{
                     width: 340px;
                     height: 160px;
+                }
+            }
+        }
+    }
+    /*HTML-PLANTEL*/
+    body{
+        main{
+            .socios-conteiner{
+                width: 100%;
+                height: 100%;
+                .row-up{
+                    width: 100%;
+                    height: 80vh;
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-rows: repeat(3,auto);
+                    gap: 10px;
+                    padding: 10px;
+                    justify-items: center;
+                        .socios-portal-row{
+                            width: 160px;
+                            height: 140px;
+                            img {
+                                width: 160px;
+                                height: 140px; }
+                                h2{
+                                    width: 160px;
+                                    height: 30px;
+                                    font-size: 20px;
+                                }
+                        }
                 }
             }
         }

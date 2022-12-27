@@ -5,13 +5,13 @@
 footer{
     background-color: #1e448d;
     color: white;
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     grid-area: footer;
+
 
     .icon-footer{
         display: flex;
