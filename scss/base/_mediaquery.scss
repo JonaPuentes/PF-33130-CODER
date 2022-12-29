@@ -144,20 +144,24 @@
     }
 
     /*!HTML-HISTORIA*/
-    .menu-historia{
-        .grid-conteiner-hist{
-            display: grid;
-            margin: 0;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(3,1fr);
-            gap: 10px;
-            justify-content: center;
-    
-            grid-template-areas: 
-            "header header"
-            "main main"
-            "footer footer"
-            ;
+    body{
+        main{
+            .menu-historia{
+                .grid-conteiner-hist{
+                    display: grid;
+                    margin: 0;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-rows: repeat(3,1fr);
+                    gap: 10px;
+                    justify-content: center;
+            
+                    grid-template-areas: 
+                    "header header"
+                    "main main"
+                    "footer footer"
+                    ;
+                }
+            }
         }
     }
 
@@ -282,83 +286,85 @@
         }
     }
     /*!HTML-HISTORIA*/
-    .menu-historia{
-        .grid-conteiner-hist{
-            grid-template-columns: repeat(1,1fr);
-            grid-template-rows: repeat(4,1fr);
-            gap: 10px;
-            justify-content: center;
-            .grid-historia-item1{
-                font-size: 15px;
-                width: 293px;
-                height: 520px;
-                align-items: center;
-                text-align: center;
-                margin: 15px;
-            
-                grid-column-start: 1;
-                grid-column-end: 2;
-            
-                grid-row-start: 1;
-                grid-row-end: 2;
-                img{
-                        width: 294px;
-                        height: 429px;
+        main{
+            .menu-historia{
+                .grid-conteiner-hist{
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(4,1fr);
+                    gap: 10px;
+                    justify-content: center;
+                    .grid-historia-item1{
+                        font-size: 15px;
+                        width: 293px;
+                        height: 520px;
+                        align-items: center;
+                        text-align: center;
+                        margin: 15px;
+                    
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                    
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        img{
+                                width: 294px;
+                                height: 429px;
+                        }
+                    }
+                    .grid-historia-p-item1{
+                        font-size: 20px;
+                        width: 80%;
+                        height: 100%;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                    
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                    
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                    }
+                    .grid-historia-item2{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    
+                    
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                    
+                        grid-row-start: 3;
+                        grid-row-end: 4;
+                        img{
+                            width: 530px;
+                            height: 310px;
+                        }
+                        h2{
+                            font-size: 35px;
+                            color: white;
+                            font-style: italic;
+                        }
+                    }
+                    .grid-historia-item3{
+                        width: 80%;
+                        height: 100%;
+                    
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                    }
                 }
             }
-            .grid-historia-p-item1{
-                font-size: 20px;
-                width: 80%;
-                height: 100%;
-                display: flex;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-            
-                grid-column-start: 1;
-                grid-column-end: 2;
-            
-                grid-row-start: 2;
-                grid-row-end: 3;
-            }
-            .grid-historia-item2{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-            
-            
-                grid-column-start: 1;
-                grid-column-end: 2;
-            
-                grid-row-start: 3;
-                grid-row-end: 4;
-                img{
-                    width: 530px;
-                    height: 310px;
-                }
-                h2{
-                    font-size: 35px;
-                    color: white;
-                    font-style: italic;
-                }
-            }
-            .grid-historia-item3{
-                width: 80%;
-                height: 100%;
-            
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-            
-                grid-column-start: 1;
-                grid-column-end: 2;
-            }
-        }
     }
     //HTML-SOCIOS//
     body{
@@ -391,6 +397,7 @@
         }
     }
     }
+}
 
 @media screen and (max-width: 700px) {
 
@@ -464,8 +471,6 @@
             }
         }
     }
-
-}
 
 @media screen and (max-width: 590px){
 
@@ -588,32 +593,36 @@
 
 
     /*!HTML-HISTORIA*/
-    .menu-historia{
-        .titulo-hist{
-            h2 {
-                color: white;
-                font-size: 35px;
-                font-weight: 100;
-                font-family: Arial, Helvetica, sans-serif;
-                width: 100%;
+    body{
+        main{
+            .menu-historia{
+                .titulo-hist{
+                    h2 {
+                        color: white;
+                        font-size: 35px;
+                        font-weight: 100;
+                        font-family: Arial, Helvetica, sans-serif;
+                        width: 100%;
+                    }
+                }
+            .grid-conteiner-hist{
+                .grid-historia-item1{
+                    img{
+                        width: 274px;
+                        height: 409px;
+                        
+                    }
+                }
+            
+                .grid-historia-item2{
+                    img{
+                        width: 450px;
+                        height: 230px;
+                    }
+                }
+            }
             }
         }
-    .grid-conteiner-hist{
-        .grid-historia-item1{
-            img{
-                width: 274px;
-                height: 409px;
-                
-            }
-        }
-    
-        .grid-historia-item2{
-            img{
-                width: 450px;
-                height: 230px;
-            }
-        }
-    }
     }
     //HTML SOCIOS//
     body{
@@ -787,19 +796,23 @@
 
 
     /*!HTML-HISTORIA*/
-    .menu-historia{
-        .grid-conteiner-hist{
-            .grid-historia-item1{
-                img{
-                    width: 260px;
-                    height: 380px;
-                }
-            }
-        
-            .grid-historia-item2{
-                img{
-                    width: 360px;
-                    height: 190px;
+    body{
+        main{
+            .menu-historia{
+                .grid-conteiner-hist{
+                    .grid-historia-item1{
+                        img{
+                            width: 260px;
+                            height: 380px;
+                        }
+                    }
+                
+                    .grid-historia-item2{
+                        img{
+                            width: 360px;
+                            height: 190px;
+                        }
+                    }
                 }
             }
         }
@@ -903,12 +916,16 @@
 
     /*!HTML-HISTORIA*/
 
-    .menu-historia{
-        .grid-conteiner-hist{
-            .grid-historia-item2{
-                img{
-                    width: 340px;
-                    height: 160px;
+    body{
+        main{
+            .menu-historia{
+                .grid-conteiner-hist{
+                    .grid-historia-item2{
+                        img{
+                            width: 340px;
+                            height: 160px;
+                        }
+                    }
                 }
             }
         }
@@ -1060,24 +1077,28 @@ header {
 
 
     /*!HTML-HISTORIA*/
-    .menu-historia{
-        .grid-conteiner-hist{
-            .grid-historia-item1{
-                margin: 0;
-                h2{
-                    font-size: nth($font-size,1 );
-                }
-                p{
-                    font-size: nth($font-size,1);
-                }
-            }
-            .grid-historia-item2{
-                h2{
-                    font-size: nth($font-size,2);
-                }
-                img{
-                    width: 280px;
-                    height: 140px;
+    body{
+        main{
+            .menu-historia{
+                .grid-conteiner-hist{
+                    .grid-historia-item1{
+                        margin: 0;
+                        h2{
+                            font-size: nth($font-size,1 );
+                        }
+                        p{
+                            font-size: nth($font-size,1);
+                        }
+                    }
+                    .grid-historia-item2{
+                        h2{
+                            font-size: nth($font-size,2);
+                        }
+                        img{
+                            width: 280px;
+                            height: 140px;
+                        }
+                    }
                 }
             }
         }
